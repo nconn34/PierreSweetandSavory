@@ -29,7 +29,7 @@ namespace SweetandSavory.Controllers
     [HttpPost]
     public ActionResult Create(Flavor flavor)
     {
-      _db.Categories.Add(flavor);
+      _db.Flavors.Add(flavor);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
