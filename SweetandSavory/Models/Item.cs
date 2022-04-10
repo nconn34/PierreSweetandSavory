@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace SweetandSavory.Models
 {
-    public class Item
+    public class Treat
     {
-        public Item()
+        public Treat()
         {
-            this.JoinEntities = new HashSet<CategoryItem>();
+            this.JoinEntities = new HashSet<FlavorTreat>();
         }
 
-        public int ItemId { get; set; }
+        public int TreatId { get; set; }
         public string Description { get; set; }
         public virtual ApplicationUser User { get; set; } 
-        public virtual ICollection<CategoryItem> JoinEntities { get;}
+        public virtual ICollection<FlavorTreat> JoinEntities { get;}
     }
 }
